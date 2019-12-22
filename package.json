@@ -4,12 +4,18 @@
   "description": "Project stub for BEMJSON render",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bem-xjst": "^8.9.6",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
   }
 }
