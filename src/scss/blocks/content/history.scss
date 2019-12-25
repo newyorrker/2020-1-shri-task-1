@@ -1,0 +1,12 @@
+.history {
+	&__details {
+		display: flex;
+		align-items: center;
+	}
+	&__show {
+		justify-content: space-between;
+	}
+	&__hide {
+		display: none;
+	}
+}

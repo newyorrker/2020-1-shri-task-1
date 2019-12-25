@@ -1,0 +1,22 @@
+/* utils */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@import './helpers/helpers';
+
+@import "./constants/constants";
+
+@import './blocks/base/base';
+@import './blocks/content/_index';
+
+body {
+	// margin: 0;
+}
+.e-accordion__more {
+	// display: none;
+}

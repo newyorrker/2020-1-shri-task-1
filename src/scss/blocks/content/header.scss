@@ -1,0 +1,14 @@
+.header {
+	width: 1280px;
+	padding-top: var(--space-xxxl);
+	padding-bottom: var(--space-xxxl);
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 179px;
+		height: 34px;
+		background-color: var(--text-primary);
+	}
+}

@@ -1,0 +1,9 @@
+.footer {
+	width: 1280px;
+	padding-top: var(--space-xxxl);
+	padding-bottom: var(--space-xxxl);
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+}

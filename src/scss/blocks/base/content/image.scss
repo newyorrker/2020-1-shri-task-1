@@ -1,0 +1,17 @@
+.image {
+	width: 100%;
+	//to do: подумать а надо ли выставлять тут все параметры границы или только стороны
+	border: $border-width var(--color-border) solid;
+	background-color: var(--background-default);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.theme_color_project-default .image {
+	background-image: url('/static/images/image-placeholder-primary.svg');
+}
+
+.theme_color_project-inverse .image,
+.theme_color_project-brand .image {
+	background-image: url('/static/images/image-placeholder-inverse.svg');
+}
