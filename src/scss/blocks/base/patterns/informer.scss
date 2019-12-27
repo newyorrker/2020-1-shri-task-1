@@ -1,43 +1,24 @@
 .informer {
-	&__content {
-		&_distribute_default {
-
-		}
-		&_distribute_between {
-
-		}
-		&_distribute_center {
-			flex-direction: column;
-			align-items: center;
-		}
-
-	}
-
-	&__action {
-		
-		&_distribute_default {
-	
-		}
-		&_distribute_between {
-
-		}
-		&_distribute_center {
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	
-	//отступы
 	&__content,
 	&__action {
 		display: flex;
+		flex-wrap: wrap;
 		&_space-a_xl {
 			padding: var(--space-xl);
 		}
 		&_space-a_xxl {
 			padding: var(--space-xxl);
 		}
-	}
+
+		&_distribute_between {
+			justify-content: space-between;
+		}
+
+		&_distribute_center {
+			justify-content: center;
+		}
+
+	}	
 }
 
 .informer_border_all {

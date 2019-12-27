@@ -1,17 +1,17 @@
 .card {
-	&__content {
-		display: flex;
-	}
+	
 
+	//to do: понять как правильно работать с выравниванием
 	&__content_distribute_center {
-		//to do: сделать миксин для центрирования
 		flex-direction: column;
 		align-items: center;
 	}
 
 	&__content_vertical-align_center {
+		display: flex;
 		align-items: center;
 	}
+	
 
 	&__content_space-a_m {
 		padding: var(--space-m)		
@@ -29,9 +29,6 @@
 		padding: var(--space-xxxl)		
 	}
 
-	&__footer {
-		//
-	}
 
 	&__footer_distribute_between {
 		justify-content: space-between;

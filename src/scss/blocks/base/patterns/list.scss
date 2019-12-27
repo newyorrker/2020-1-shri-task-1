@@ -1,23 +1,18 @@
 .list {
 	&__item {
-		&_border_bottom {
-			border-bottom: $border-width var(--color-border) solid;
-		}
-		&_border_top {
-			border-bottom: $border-width var(--color-border) solid;
-		}
-
-		&_distribute_between,
-		&_vertical-align_center {
-			display: flex;
-		}
-
 		&_distribute_between {
 			justify-content: space-between;
 		}
 
 		&_vertical-align_center {
 			align-items: center;
+		}
+
+		&_border_bottom {
+			border-bottom: $border-width var(--color-border) solid;
+		}
+		&_border_top {
+			border-bottom: $border-width var(--color-border) solid;
 		}
 
 		&_indent-t_m {

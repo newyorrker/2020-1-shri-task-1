@@ -1,15 +1,13 @@
 .onoffswitch {
 	display: flex;
-	align-items: center;
 	width: 97px;
 	height: 32px;
+	align-items: center;
 	border: 2px var(--color-border) solid;
 	&__button {
 		width: 24px;
 		height: 24px;
 		background-color: var(--color-border);
-		
 		margin: 2px;
-
 	}
 }

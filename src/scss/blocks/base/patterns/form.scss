@@ -1,6 +1,4 @@
 .form {
-	background-color: var(--background-default);
-
 	&__item {
 		
 		&_border_bottom {
@@ -16,6 +14,8 @@
 		&_vertical-align_center {
 			align-items: center;
 		}
+
+		//to do: значения генерировать миксином или функией
 
 		&_indent-b_xxxs {
 			margin-bottom: var(--space-xxxs);
@@ -138,5 +138,5 @@
 }
 
 .form_view_default {
-	
+	background-color: var(--background-default);
 }

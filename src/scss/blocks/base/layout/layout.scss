@@ -1,5 +1,7 @@
 /* LAYOUT */
 
+	//to do: Что тут так пусто?
+
 	.layout {
 		&__container {
 
@@ -13,7 +15,7 @@
 			width: 920px;
 		}
 		&__container_size_m {
-			width: 1280px;
+			width: $content-width-l;
 		}
 
 		&__container_space-v_xxxxl {

@@ -1,7 +1,5 @@
 /*THEME*/
 
-	/*color*/
-
 	//сюда забить переменные для цветов как минимум
 
 	.theme_color_project-default {
@@ -86,4 +84,13 @@
 		@include lg {
 			--gap: var(--space-xl);
 		}
+	}
+
+	.theme_color_project-default {
+		--url-placeholder-image: url('/static/images/image-placeholder-primary.svg');
+	}
+
+	.theme_color_project-inverse,
+	.theme_color_project-brand {
+		--url-placeholder-image: url('/static/images/image-placeholder-inverse.svg');
 	}

@@ -1,5 +1,18 @@
 /* utils */
 
+
+//to do:
+
+// 2. Подклчюить babel
+// 3. Доделать интерактивные блоки
+
+// Заняться мобильной версткой
+
+// 4. Внедрить stylelint
+// 5. Внедрить esLint
+// 6. Тесты по скриншоту
+// 7. Автотесты Selenium
+
 html {
   box-sizing: border-box;
 }
@@ -8,8 +21,7 @@ html {
 }
 
 @import './helpers/helpers';
-
-@import "./constants/constants";
+@import './constants/constants';
 
 @import './blocks/base/base';
 @import './blocks/content/_index';
@@ -17,6 +29,7 @@ html {
 body {
 	// margin: 0;
 }
-.e-accordion__more {
+
+ .e-accordion__more {
 	// display: none;
 }

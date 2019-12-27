@@ -2,10 +2,6 @@
 
 .grid {
 	display: flex;
-	&__fraction {
-
-	}
-	
 }
 
 .grid_m-columns_10 {
@@ -59,7 +55,7 @@
 }
 
 .grid_col-gap_two-thirds {
-	
+	//to do: сделать две трети
 }
 
 .grid_col-gap_full {
@@ -84,6 +80,8 @@
 	}
 }
 
+
+//to do: задать значения
 .grid_row-gap_full {
 	
 }
