@@ -4,7 +4,7 @@
 
 	.layout {
 		&__container {
-
+			// background-color: var(--background-default)
 		}
 		
 		&__container_align_center {
@@ -12,21 +12,21 @@
 		}
 
 		&__container_size_s {
-			width: 920px;
+			max-width: $content-width-s;
 		}
 		&__container_size_m {
-			width: $content-width-l;
+			max-width: $content-width-l;
 		}
 
 		&__container_space-v_xxxxl {
-
+			
 		}
 		&__container_space-v_xxxxxl {
 
 		}
 
 		&__container_indent-b_xxl {
-
+			margin-bottom: var(--space-xxl);
 		}
 		&__container_indent-b_xxxxl {
 

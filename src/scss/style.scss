@@ -3,9 +3,6 @@
 
 //to do:
 
-// 2. Подклчюить babel
-// 3. Доделать интерактивные блоки
-
 // Заняться мобильной версткой
 
 // 4. Внедрить stylelint
@@ -27,7 +24,11 @@ html {
 @import './blocks/content/_index';
 
 body {
-	// margin: 0;
+	margin: 0;
+}
+
+.black {
+	background-color: black;
 }
 
  .e-accordion__more {

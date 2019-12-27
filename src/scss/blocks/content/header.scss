@@ -1,5 +1,6 @@
 .header {
-	width: $content-width-l;
+	max-width: $content-width-l;
+	background-color: var(--background-default);
 	padding-top: var(--space-xxxl);
 	padding-bottom: var(--space-xxxl);
 	&__content {
