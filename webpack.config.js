@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
 module.exports = {
     entry: './src/js/main.js',
     output: {
@@ -40,5 +39,6 @@ module.exports = {
             }
         ]
     },
-    mode: 'development'
+    mode: 'development',
+    devtool: 'source-map'
 };
