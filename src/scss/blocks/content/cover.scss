@@ -1,0 +1,13 @@
+.cover {
+	min-height: 472px;
+	&__preview .image {
+		height: 180px;
+		background-image: var(--url-placeholder-image);
+	}
+	&__preview + &__text {
+		margin-top: var(--space-l);
+	}
+	&__footer {
+		margin-top: var(--space-xxs);
+	}
+}

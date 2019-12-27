@@ -1,0 +1,38 @@
+/* LAYOUT */
+
+	//to do: Что тут так пусто?
+
+	.layout {
+		&__container {
+			// background-color: var(--background-default)
+		}
+		
+		&__container_align_center {
+			
+		}
+
+		&__container_size_s {
+			max-width: $content-width-s;
+		}
+		&__container_size_m {
+			max-width: $content-width-l;
+		}
+
+		&__container_space-v_xxxxl {
+			
+		}
+		&__container_space-v_xxxxxl {
+
+		}
+
+		&__container_indent-b_xxl {
+			margin-bottom: var(--space-xxl);
+		}
+		&__container_indent-b_xxxxl {
+
+		}
+	}
+
+	.layout__container {
+
+	}

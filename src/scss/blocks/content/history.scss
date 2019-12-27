@@ -1,0 +1,10 @@
+.history {
+	&__details {
+		display: flex;
+		align-items: center;
+	}
+	&__show {
+		display: flex;
+		justify-content: space-between;
+	}
+}
