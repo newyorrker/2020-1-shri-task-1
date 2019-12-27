@@ -23,7 +23,7 @@ const checkClick = (event) => {
 export default {
     on() {
 
-        if(document) {
+        if(document.body) {
             document.body.addEventListener('click', checkClick)
         } else {
             console.error('document is ' + document);
@@ -32,7 +32,7 @@ export default {
     },
     off() {
 
-        if(document) {
+        if(document.body) {
             document.body.removeEventListener('click', checkClick)
         } else {
             console.error('document is ' + document);

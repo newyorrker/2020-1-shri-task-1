@@ -222,19 +222,7 @@ html {
     flex-basis: 41.66666667%; }
   .grid_m-columns_12 .grid__fraction_m-col_8 {
     max-width: 66.66666667%;
-    flex-basis: 66.66666667%; }
-  .grid_col-gap_full {
-    margin-left: calc(var(--gap) / -2);
-    margin-right: calc(var(--gap) / -2); }
-    .grid_col-gap_full .grid__fraction {
-      padding-left: calc(var(--gap) / 2);
-      padding-right: calc(var(--gap) / 2); }
-  .grid_col-gap_half {
-    margin-left: calc(var(--gap) / -4);
-    margin-right: calc(var(--gap) / -4); }
-    .grid_col-gap_half .grid__fraction {
-      padding-left: calc(var(--gap) / 4);
-      padding-right: calc(var(--gap) / 4); } }
+    flex-basis: 66.66666667%; } }
 
 /* LAYOUT */
 .layout__container_size_s {
