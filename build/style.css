@@ -186,68 +186,65 @@ html {
 /* GRID */
 .grid {
   display: -webkit-box;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  .grid__fraction {
+    max-width: 100%;
+    flex-basis: 100%; }
 
-.grid_m-columns_10 .grid__fraction_m-col_2 {
-  max-width: 20%;
-  flex-basis: 20%; }
-
-.grid_m-columns_10 .grid__fraction_m-col_3 {
-  max-width: 30%;
-  flex-basis: 30%; }
-
-.grid_m-columns_10 .grid__fraction_m-col_4 {
-  max-width: 40%;
-  flex-basis: 40%; }
-
-.grid_m-columns_10 .grid__fraction_m-col_5 {
-  max-width: 50%;
-  flex-basis: 50%; }
-
-.grid_m-columns_10 .grid__fraction_m-col_8 {
-  max-width: 80%;
-  flex-basis: 80%; }
-
-.grid_m-columns_12 .grid__fraction_m-col_2 {
-  max-width: 6%;
-  flex-basis: 6%; }
-
-.grid_m-columns_12 .grid__fraction_m-col_3 {
-  max-width: 25%;
-  flex-basis: 25%; }
-
-.grid_m-columns_12 .grid__fraction_m-col_4 {
-  max-width: 33.33333333%;
-  flex-basis: 33.33333333%; }
-
-.grid_m-columns_12 .grid__fraction_m-col_5 {
-  max-width: 41.66666667%;
-  flex-basis: 41.66666667%; }
-
-.grid_m-columns_12 .grid__fraction_m-col_8 {
-  max-width: 66.66666667%;
-  flex-basis: 66.66666667%; }
-
-.grid_col-gap_full {
-  margin-left: calc(var(--gap) / -2);
-  margin-right: calc(var(--gap) / -2); }
-  .grid_col-gap_full .grid__fraction {
-    padding-left: calc(var(--gap) / 2);
-    padding-right: calc(var(--gap) / 2); }
-
-.grid_col-gap_half {
-  margin-left: calc(var(--gap) / -4);
-  margin-right: calc(var(--gap) / -4); }
-  .grid_col-gap_half .grid__fraction {
-    padding-left: calc(var(--gap) / 4);
-    padding-right: calc(var(--gap) / 4); }
+@media only screen and (min-width: 1024px) {
+  .grid_m-columns_10 .grid__fraction_m-col_2 {
+    max-width: 20%;
+    flex-basis: 20%; }
+  .grid_m-columns_10 .grid__fraction_m-col_3 {
+    max-width: 30%;
+    flex-basis: 30%; }
+  .grid_m-columns_10 .grid__fraction_m-col_4 {
+    max-width: 40%;
+    flex-basis: 40%; }
+  .grid_m-columns_10 .grid__fraction_m-col_5 {
+    max-width: 50%;
+    flex-basis: 50%; }
+  .grid_m-columns_10 .grid__fraction_m-col_8 {
+    max-width: 80%;
+    flex-basis: 80%; }
+  .grid_m-columns_12 .grid__fraction_m-col_2 {
+    max-width: 6%;
+    flex-basis: 6%; }
+  .grid_m-columns_12 .grid__fraction_m-col_3 {
+    max-width: 25%;
+    flex-basis: 25%; }
+  .grid_m-columns_12 .grid__fraction_m-col_4 {
+    max-width: 33.33333333%;
+    flex-basis: 33.33333333%; }
+  .grid_m-columns_12 .grid__fraction_m-col_5 {
+    max-width: 41.66666667%;
+    flex-basis: 41.66666667%; }
+  .grid_m-columns_12 .grid__fraction_m-col_8 {
+    max-width: 66.66666667%;
+    flex-basis: 66.66666667%; }
+  .grid_col-gap_full {
+    margin-left: calc(var(--gap) / -2);
+    margin-right: calc(var(--gap) / -2); }
+    .grid_col-gap_full .grid__fraction {
+      padding-left: calc(var(--gap) / 2);
+      padding-right: calc(var(--gap) / 2); }
+  .grid_col-gap_half {
+    margin-left: calc(var(--gap) / -4);
+    margin-right: calc(var(--gap) / -4); }
+    .grid_col-gap_half .grid__fraction {
+      padding-left: calc(var(--gap) / 4);
+      padding-right: calc(var(--gap) / 4); } }
 
 /* LAYOUT */
 .layout__container_size_s {
-  width: 920px; }
+  max-width: 920px; }
 
 .layout__container_size_m {
-  width: 1280px; }
+  max-width: 1280px; }
+
+.layout__container_indent-b_xxl {
+  margin-bottom: var(--space-xxl); }
 
 .card__content_distribute_center {
   -webkit-box-orient: vertical;
@@ -535,9 +532,6 @@ html {
 .list_view_default {
   background-color: var(--background-default); }
 
-.section {
-  background-color: var(--background-default); }
-
 .section_indent-b_xxl {
   margin-bottom: var(--space-xxl); }
 
@@ -551,6 +545,12 @@ html {
 .section_space-v_xxxxl {
   padding-top: var(--space-xxxxl);
   padding-bottom: var(--space-xxxxl); }
+
+.e-accordion__more {
+  display: none; }
+
+.e-accordion_state_active .e-accordion__more {
+  display: block; }
 
 /*THEME*/
 .theme_color_project-default {
@@ -619,16 +619,16 @@ html {
 
 .theme_gap_small {
   --gap: var(--space-s); }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     .theme_gap_small {
       --gap: var(--space-xl); } }
 
 .theme_color_project-default {
-  --url-placeholder-image: url('/static/images/image-placeholder-primary.svg'); }
+  --url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E"); }
 
 .theme_color_project-inverse,
 .theme_color_project-brand {
-  --url-placeholder-image: url('/static/images/image-placeholder-inverse.svg'); }
+  --url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E"); }
 
 .cover {
   min-height: 472px; }
@@ -655,7 +655,7 @@ html {
     padding: 7px; }
 
 .footer {
-  width: 1280px;
+  max-width: 1280px;
   padding-top: var(--space-xxxl);
   padding-bottom: var(--space-xxxl); }
   .footer__content {
@@ -665,7 +665,8 @@ html {
             justify-content: space-between; }
 
 .header {
-  width: 1280px;
+  max-width: 1280px;
+  background-color: var(--background-default);
   padding-top: var(--space-xxxl);
   padding-bottom: var(--space-xxxl); }
   .header__content {
@@ -690,22 +691,20 @@ html {
   -webkit-box-pack: justify;
           justify-content: space-between; }
 
-.history__hide {
-  display: none; }
-
 .onoffswitch {
-  display: -webkit-box;
-  display: flex;
   width: 97px;
   height: 32px;
-  -webkit-box-align: center;
-          align-items: center;
-  border: 2px var(--color-border) solid; }
+  border: 2px var(--color-border) solid;
+  position: relative; }
   .onoffswitch__button {
     width: 24px;
     height: 24px;
+    position: absolute;
     background-color: var(--color-border);
     margin: 2px; }
+
+.onoffswitch_checked .onoffswitch__button {
+  right: 0; }
 
 .payment__footer .button {
   margin-left: auto; }
@@ -730,3 +729,11 @@ html {
   .warning__button-wrapper {
     margin-top: 5px; }
 
+body {
+  margin: 0; }
+
+.black {
+  background-color: black; }
+
+
+/*# sourceMappingURL=style.css.map*/
