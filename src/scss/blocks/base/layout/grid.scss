@@ -70,53 +70,38 @@
     }
 
     .grid_col-gap_two-thirds {
-        //to do: сделать две трети
-    }
-
-    .grid_col-gap_full {
-        margin-left: calc(var(--gap) / -2);
-        margin-right: calc(var(--gap) / -2);
+        margin-left: calc(($gap - $gap / 3) / -2);
+        margin-right: calc(($gap - $gap / 3) / -2);
 
         .grid {
             &__fraction {
-                padding-left: calc(var(--gap) / 2);
-                padding-right: calc(var(--gap) / 2);
+                padding-left: calc(($gap - $gap / 3) / 2);
+                padding-right: calc(($gap - $gap / 3) / 2);
+            }
+        }
+    }
+
+    .grid_col-gap_full {
+        margin-left: calc($gap / -2);
+        margin-right: calc($gap / -2);
+
+        .grid {
+            &__fraction {
+                padding-left: calc($gap / 2);
+                padding-right: calc($gap / 2);
             }
         }
     }
 
     .grid_col-gap_half {
-        margin-left: calc(var(--gap) / -4);
-        margin-right: calc(var(--gap) / -4);
+        margin-left: calc($gap / -4);
+        margin-right: calc($gap / -4);
 
         .grid {
             &__fraction {
-                padding-left: calc(var(--gap) / 4);
-                padding-right: calc(var(--gap) / 4);
+                padding-left: calc($gap / 4);
+                padding-right: calc($gap / 4);
             }
         }
     }
 }
-
-// @include r($content-width-l) {
-// 	.grid_col-gap_full {
-// 		margin-left: calc(var(--gap) / -2);
-// 		margin-right: calc(var(--gap) / -2);
-// 	}
-
-// 	.grid_col-gap_half {
-// 		margin-left: calc(var(--gap) / -4);
-// 		margin-right: calc(var(--gap) / -4);
-// 	}
-// }
-
-//to do: задать значения
-// .grid_row-gap_full {
-// 	margin-top: var(--gap);
-// 	margin-bottom: var(--gap);
-// }
-
-// .grid_row-gap_half {
-// 	margin-top: calc(var(--gap) / 2);
-// 	margin-bottom: calc(var(--gap) / 2);
-// }

@@ -1,30 +1,18 @@
+$sizes: (
+    "xxxs": var(--space-xxxs),
+    "xxs": var(--space-xxs),
+    "xs": var(--space-xs),
+    "s": var(--space-s),
+    "m": var(--space-m),
+    "l": var(--space-l),
+    "xl": var(--space-xl),
+    "xxl": var(--space-xxl),
+    "xxxl": var(--space-xxxl)
+);
+
 .text {
     &__word {
         display: inline-block;
-    }
-}
-
-.text_view_primary {
-    .text {
-        &__word { background-color: var(--text-primary); }
-    }
-}
-
-.text_view_secondary {
-    .text {
-        &__word { background-color: var(--text-secondary); }
-    }
-}
-
-.text_view_ghost {
-    .text {
-        &__word { background-color: var(--text-ghost); }
-    }
-}
-
-.text_view_link {
-    .text {
-        &__word { background-color: var(--text-link); }
     }
 }
 
@@ -32,71 +20,59 @@
     text-align: center;
 }
 
-//to do: mixin для генерации этих стилей
+@mixin text-color($color) {
+    .text {
+        &__word { background-color: $color; }
+    }
+}
 
-.text_size_s {
-    line-height: var(--line-height-s);
+@mixin text-word-params($line-height, $height, $width-s, $width-m, $width-l) {
+    line-height: $line-height;
 
     .text {
         &__word {
-            height: 8px;
-            &_width_s { width: 20px; }
-            &_width_m { width: 48px; }
-            &_width_l { width: 100px; }
+            height: $height;
+            &_width_s { width: $width-s; }
+            &_width_m { width: $width-m; }
+            &_width_l { width: $width-l; }
         }
     }
+}
+
+.text_view_primary {
+    @include text-color(var(--text-primary));
+}
+
+.text_view_secondary {
+    @include text-color(var(--text-secondary));
+}
+
+.text_view_ghost {
+    @include text-color(var(--text-ghost));
+}
+
+.text_view_link {
+    @include text-color(var(--text-link));
+}
+
+.text_size_s {
+    @include text-word-params(var(--line-height-s), 8px, 20px, 48px, 100px);
 }
 
 .text_size_m {
-    line-height: var(--line-height-m);
-
-    .text {
-        &__word {
-            height: 10px;
-            &_width_s { width: 24px; }
-            &_width_m { width: 56px; }
-            &_width_l { width: 114px; }
-        }
-    }
+    @include text-word-params(var(--line-height-m), 10px, 24px, 56px, 114px);
 }
 
 .text_size_l {
-    line-height: var(--line-height-l);
-
-    .text {
-        &__word {
-            height: 11px;
-            &_width_s { width: 28px; }
-            &_width_m { width: 68px; }
-            &_width_l { width: 138px; }
-        }
-    }
+    @include text-word-params(var(--line-height-l), 11px, 28px, 68px, 138px);
 }
 
 .text_size_xl {
-    line-height: var(--line-height-xl);
-
-    .text {
-        &__word {
-            height: 13px;
-            &_width_s { width: 32px; }
-            &_width_m { width: 74px; }
-            &_width_l { width: 154px; }
-        }
-    }
+    @include text-word-params(var(--line-height-xl), 13px, 32px, 74px, 154px);
 }
 
 .text_size_xxl {
-    line-height: var(--line-height-xxl);
-
-    .text {
-        &__word {
-            height: 16px;
-            &_width_s { width: 36px; }
-            &_width_m { width: 88px; }
-            &_width_l { width: 184px; }
-        }
-    }
+    @include text-word-params(var(--line-height-xxl), 16px, 36px, 88px, 184px);
 }
 
 .text_type_h1 { margin: 18px 0 24px; }

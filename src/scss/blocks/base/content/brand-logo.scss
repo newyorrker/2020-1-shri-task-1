@@ -1,8 +1,7 @@
-//to do: //вынести цвета в константы
-.brand-logo_name_blue { background-color: #5dcdf9; }
-.brand-logo_name_green { background-color: #23b324; }
-.brand-logo_name_red { background-color: #f33; }
-.brand-logo_name_purple { background-color: #c62cff; }
+.brand-logo_name_blue { background-color: $color-blue; }
+.brand-logo_name_green { background-color: $color-green; }
+.brand-logo_name_red { background-color: $color-red; }
+.brand-logo_name_purple { background-color: $color-purple; }
 
 .brand-logo_size_xxs {
     width: 24px;
