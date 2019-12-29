@@ -1,17 +1,15 @@
 .icon-plus {
-    @include lg {
-        &__icon {
-            &_indent-r_s {
-                margin-right: var(--space-s);
-            }
+    &__icon {
+        &_indent-r_s {
+            margin-right: var(--space-s);
+        }
 
-            &_indent-r_m {
-                margin-right: var(--space-m);
-            }
+        &_indent-r_m {
+            margin-right: var(--space-m);
+        }
 
-            &_indent-l_l {
-                margin-left: var(--space-l);
-            }
+        &_indent-l_l {
+            margin-left: var(--space-l);
         }
     }
 }

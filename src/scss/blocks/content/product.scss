@@ -1,7 +1,6 @@
 .product {
     min-height: 300px;
     border-width: $border-width;
-
     &__content + &__footer {
         margin-top: 16px;
     }
@@ -14,5 +13,8 @@
 
     &__title {
         margin-bottom: var(--space-xxxl);
+    }
+    @include lg {
+        margin-bottom: 0;
     }
 }

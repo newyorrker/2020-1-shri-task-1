@@ -2,39 +2,23 @@
     &__show,
     &__details {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    &__pic {
+    &__show {
+        justify-content: space-between;
+    }
+
+    &__destination {
         display: flex;
-        justify-content: center;
+        flex-wrap: nowrap;
     }
 
-    &__time {
-        text-align: center;
+    &__details {
+        align-items: center;
     }
 
     &__actions {
         display: flex;
-    }
-
-    @include lg {
-        &__show,
-        &__details {
-            flex-direction: row;
-        }
-
-        &__show {
-            justify-content: space-between;
-        }
-
-        &__destination {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-
-        &__details {
-            align-items: center;
-        }
     }
 }

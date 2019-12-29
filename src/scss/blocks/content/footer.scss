@@ -9,5 +9,11 @@
         max-width: $content-width-l;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 var(--space-s);
+    }
+    @include lg {
+        &__content {
+            padding: 0;
+        }
     }
 }
