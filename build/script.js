@@ -119,14 +119,14 @@ var checkClick = function checkClick(event) {
     if (document.body) {
       document.body.addEventListener('click', checkClick);
     } else {
-      console.error('document is ' + document);
+      console.error('document.body is ' + document.body);
     }
   },
   off: function off() {
     if (document.body) {
       document.body.removeEventListener('click', checkClick);
     } else {
-      console.error('document is ' + document);
+      console.error('document.body is ' + document.body);
     }
   }
 });
@@ -169,7 +169,11 @@ var blocks = [{
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accordion", function() { return accordion; });
 var accordion = function accordion(element, target) {
-  element.classList.toggle('e-accordion_state_active');
+  if (element.classList.contains('e-accordion_state_active') && target.closest('.history__show')) {
+    element.classList.remove('e-accordion_state_active');
+  } else {
+    element.classList.add('e-accordion_state_active');
+  }
 };
 
 /***/ }),
@@ -189,7 +193,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var toggleButton = function toggleButton(element) {
   element.classList.toggle('onoffswitch_checked');
-  document.body.classList.toggle('black');
 };
 
 var toggleTheme = function toggleTheme() {
