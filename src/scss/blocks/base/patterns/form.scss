@@ -1,7 +1,10 @@
 .form {
-    &__label_width_default,
-    &__control {
-        width: 100%;
+    &__label_width_default {
+        width: 35%;
+    }
+
+    &__label_width_default + &__control {
+        width: 65%;
     }
     &__item {
         flex-wrap: wrap;
@@ -20,16 +23,6 @@
 
         &_vertical-align_center {
             align-items: center;
-        }
-    }
-
-    @include lg {
-        &__label_width_default {
-            width: 35%;
-        }
-
-        &__label_width_default + &__control {
-            width: 65%;
         }
     }
 }

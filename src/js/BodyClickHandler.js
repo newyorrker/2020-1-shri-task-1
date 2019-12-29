@@ -19,9 +19,17 @@ const checkClick = event => {
 
 export default {
 	on () {
-		if (document.body) { document.body.addEventListener('click', checkClick) } else { console.error('document.body is ' + document.body) }
+		if (document.body) {
+			document.body.addEventListener('click', checkClick)
+		} else {
+			console.error('document.body is ' + document.body)
+		}
 	},
 	off () {
-		if (document.body) { document.body.removeEventListener('click', checkClick) } else { console.error('document.body is ' + document.body) }
+		if (document.body) {
+			document.body.removeEventListener('click', checkClick)
+		} else {
+			console.error('document.body is ' + document.body)
+		}
 	}
 }

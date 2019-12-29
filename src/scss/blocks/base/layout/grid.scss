@@ -10,6 +10,51 @@
     }
 }
 
+.grid_row-gap_two-thirds {
+    .grid {
+        &__fraction {
+            padding-top: calc((var(--gap) - var(--gap) / 3) / 2);
+            padding-bottom: calc((var(--gap) - var(--gap) / 3) / 2);
+        }
+        &__fraction:first-child {
+            padding-top: 0;
+        }
+        &__fraction:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.grid_row-gap_full {
+    .grid {
+        &__fraction {
+            padding-top: calc(var(--gap) / 2);
+            padding-bottom: calc(var(--gap) / 2);
+        }
+        &__fraction:first-child {
+            padding-top: 0;
+        }
+        &__fraction:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.grid_row-gap_half {
+    .grid {
+        &__fraction {
+            padding-top: calc(var(--gap) / 4);
+            padding-bottom: calc(var(--gap) / 4);
+        }
+        &__fraction:first-child {
+            padding-top: 0;
+        }
+        &__fraction:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
 @include lg {
     .grid_m-columns_10 {
         .grid {
@@ -101,6 +146,31 @@
             &__fraction {
                 padding-left: calc(var(--gap) / 4);
                 padding-right: calc(var(--gap) / 4);
+            }
+        }
+    }
+
+    .grid_row-gap_two-thirds {
+        .grid {
+            &__fraction {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .grid_row-gap_full {
+        .grid {
+            &__fraction {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .grid_row-gap_half {
+        .grid {
+            &__fraction {
+                padding-top: 0;
+                padding-bottom: 0;
             }
         }
     }
