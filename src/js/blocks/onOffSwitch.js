@@ -2,7 +2,6 @@ import { toggleListClasses } from '../utils/domHelper';
 
 const toggleButton = (element) => {
     element.classList.toggle('onoffswitch_checked');
-    document.body.classList.toggle('black');
 }
 
 const toggleTheme = () => {
