@@ -1,34 +1,27 @@
-import { toggleListClasses } from '../utils/domHelper';
+import { toggleListClasses } from '../utils/domHelper'
 
-const toggleButton = (element) => {
-    element.classList.toggle('onoffswitch_checked');
-    document.body.classList.toggle('black');
+const toggleButton = element => {
+	element.classList.toggle('onoffswitch_checked')
 }
 
 const toggleTheme = () => {
-    
-    let theme = {
-        default: 'theme_color_project-default',
-        inverse: 'theme_color_project-inverse'
-    }
-    
-    let themeElements = document.getElementsByClassName('theme');
+	const theme = {
+		default: 'theme_color_project-default',
+		inverse: 'theme_color_project-inverse'
+	}
 
-    for (let element of themeElements) {
+	const themeElements = document.getElementsByClassName('theme')
 
-        let classList = element.classList;
-        if(classList.contains(theme.default) || classList.contains(theme.inverse)) {
-            toggleListClasses(classList, theme);
-        }
-    };
+	for (const element of themeElements) {
+		const classList = element.classList
+		if (classList.contains(theme.default) || classList.contains(theme.inverse)) { toggleListClasses(classList, theme) }
+	}
 }
 
-export const onOffSwitch = (element) => {
+export const onOffSwitch = element => {
+	// change button state
+	toggleButton(element)
 
-    //change button state 
-    toggleButton(element);
-
-    //change page theme
-    toggleTheme();
-
-};
+	// change page theme
+	toggleTheme()
+}

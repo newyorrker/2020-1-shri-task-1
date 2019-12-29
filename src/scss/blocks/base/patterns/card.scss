@@ -1,73 +1,79 @@
 .card {
-	
-	//to do: понять как правильно работать с выравниванием
-	&__content_distribute_center {
-		flex-direction: column;
-		align-items: center;
-	}
 
-	&__content_vertical-align_center {
-		display: flex;
-		align-items: center;
-	}
-	
+    &__content_distribute_center {
+        flex-direction: column;
+        align-items: center;
+    }
 
-	&__content_space-a_m {
-		padding: var(--space-m)		
-	}
-	&__content_space-a_xl {
-		padding: var(--space-xl)		
-	}
-	&__content_space-a_l {
-		padding: var(--space-l)		
-	}
-	&__content_space-a_xxl {
-		padding: var(--space-xxl)		
-	}
-	&__content_space-a_xxxl {
-		padding: var(--space-xxxl)		
-	}
+    &__content_vertical-align_center {
+        align-items: center;
+    }
 
+    &__content_space-a_m {
+        padding: var(--space-m);
+    }
 
-	&__footer_distribute_between {
-		justify-content: space-between;
-	}
-	&__footer_distribute_center {
-		justify-content: center;	
-	}
-	&__footer_distribute_right {
-		justify-content: flex-end;
-	}
+    &__content_space-a_xl {
+        padding: var(--space-xl);
+    }
 
-	&__footer_vertical-align_center {
-		display: flex;
-		align-items: center;
-	}
-	&__footer_vertical-align_top {
-		align-items: flex-start;
-	}
-	&__footer_vertical-align_bottom {
-		align-items: flex-end;
-	}
+    &__content_space-a_l {
+        padding: var(--space-l);
+    }
 
-	&__footer_space-a_m {
-		padding: var(--space-m)		
-	}
-	&__footer_space-a_l {
-		padding: var(--space-l)		
-	}
-	&__footer_space-a_xl {
-		padding: var(--space-xl)		
-	}
-	&__footer_space-a_xxl {
-		padding: var(--space-xxl)		
-	}
+    &__content_space-a_xxl {
+        padding: var(--space-xxl);
+    }
+
+    &__content_space-a_xxxl {
+        padding: var(--space-xxxl);
+    }
+
+    &__footer_distribute_between {
+        justify-content: space-between;
+    }
+
+    &__footer_distribute_center {
+        justify-content: center;
+    }
+
+    &__footer_distribute_right {
+        justify-content: flex-end;
+    }
+
+    &__footer_vertical-align_center {
+        align-items: center;
+    }
+
+    &__footer_vertical-align_top {
+        align-items: flex-start;
+    }
+
+    &__footer_vertical-align_bottom {
+        align-items: flex-end;
+    }
+
+    &__footer_space-a_m {
+        padding: var(--space-m);
+    }
+
+    &__footer_space-a_l {
+        padding: var(--space-l);
+    }
+
+    &__footer_space-a_xl {
+        padding: var(--space-xl);
+    }
+
+    &__footer_space-a_xxl {
+        padding: var(--space-xxl);
+    }
 }
 
 .card_border_all {
-	border: $border-width var(--color-border) solid; 
+    border: $border-width var(--color-border) solid;
 }
 
 .card_view_default {
-	background-color: var(--background-default);
+    background-color: var(--background-default);
 }

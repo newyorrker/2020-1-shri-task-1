@@ -1,13 +1,13 @@
 .e-accordion {
-	&__more {
-		display: none;
-	}
+    &__more {
+        display: none;
+    }
 }
 
 .e-accordion_state_active {
-	.e-accordion {
-		&__more {
-			display: block;
-		}
-	}
+    .e-accordion {
+        &__more {
+            display: block;
+        }
+    }
 }

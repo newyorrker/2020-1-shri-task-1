@@ -1,0 +1,73 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1838,
+      "height": 1254
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Index",
+      "url": "http://localhost:3000/index",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Index - onoffswitch",
+      "url": "http://localhost:3000/index",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".onoffswitch"
+    },
+    {
+      "label": "Index - history",
+      "url": "http://localhost:3000/index",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".history__show"
+    },
+    {
+      "label": "Product",
+      "url": "http://localhost:3000/product",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Product - onoffswitch",
+      "url": "http://localhost:3000/product",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".onoffswitch"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

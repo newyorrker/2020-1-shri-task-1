@@ -1,18 +1,27 @@
 .event {
-	min-height: 400px;
-	&__preview {
-		display: flex;
-	}
-	&__preview + &__title {
-		margin-top: var(--space-xxl);
-	}
-	&__title + &__description {
-		margin-top: var(--space-s);
-	}
-	&__speaker ~ div {
-		margin-left: var(--space-xs);
-	}
-	&__footer {
-		padding: 7px;
-	}
+    min-height: 400px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__preview {
+        display: flex;
+    }
+
+    &__preview + &__title {
+        margin-top: var(--space-xxl);
+    }
+
+    &__title + &__description {
+        margin-top: var(--space-s);
+    }
+
+    &__speaker ~ div {
+        margin-left: var(--space-xs);
+    }
+
+    &__footer {
+        padding: 7px;
+    }
 }

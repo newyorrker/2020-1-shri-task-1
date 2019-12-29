@@ -1,142 +1,69 @@
 .form {
-	&__item {
-		
-		&_border_bottom {
-			border-bottom: $border-width var(--color-border) solid;
-		}
-		&_border_bottom:last-child {
-			border-bottom: 0;
-		}
-		&_distribute_between {
-			display: flex;
-			justify-content: space-between;
-		}
-		&_vertical-align_center {
-			align-items: center;
-		}
+    &__label_width_default,
+    &__control {
+        width: 100%;
+    }
+    &__item {
+        flex-wrap: wrap;
+        &_border_bottom {
+            border-bottom: $border-width var(--color-border) solid;
+        }
 
-		//to do: значения генерировать миксином или функией
+        &_border_bottom:last-child {
+            border-bottom: 0;
+        }
 
-		&_indent-b_xxxs {
-			margin-bottom: var(--space-xxxs);
-		}
-		&_indent-b_xxs {
-			margin-bottom: var(--space-xxs);
-		}
-		&_indent-b_xs {
-			margin-bottom: var(--space-xs);
-		}
-		&_indent-b_s {
-			margin-bottom: var(--space-s);
-		}
-		&_indent-b_m {
-			margin-bottom: var(--space-m);
-		}
-		&_indent-b_l {
-			margin-bottom: var(--space-l);
-		}
-		&_indent-b_xl {
-			margin-bottom: var(--space-xl);
-		}
-		&_indent-b_xxl {
-			margin-bottom: var(--space-xxl);
-		}
-		&_indent-b_xxxl {
-			margin-bottom: var(--space-xxxl);
-		}
+        &_distribute_between {
+            display: flex;
+            justify-content: space-between;
+        }
 
-		&_space-h_xxxs {
-			padding-left: var(--space-xxxs);
-			padding-right: var(--space-xxxs);
-		}
-		&_space-h_xxs {
-			padding-left: var(--space-xxs);
-			padding-right: var(--space-xxs);
-		}
-		&_space-h_xs {
-			padding-left: var(--space-xs);
-			padding-right: var(--space-xs);
-		}
-		&_space-h_s {
-			padding-left: var(--space-s);
-			padding-right: var(--space-s);
-		}
-		&_space-h_m {
-			padding-left: var(--space-m);
-			padding-right: var(--space-m);
-		}
-		&_space-h_l {
-			padding-left: var(--space-l);
-			padding-right: var(--space-l);
-		}
-		&_space-h_xl {
-			padding-left: var(--space-xl);
-			padding-right: var(--space-xl);
-		}
-		&_space-h_xxl {
-			padding-left: var(--space-xxl);
-			padding-right: var(--space-xxl);
-		}
-		&_space-h_xxxl {
-			padding-left: var(--space-xxxl);
-			padding-right: var(--space-xxxl);
-		}
+        &_vertical-align_center {
+            align-items: center;
+        }
+    }
 
-		&_space-v_xxxs {
-			padding-top: var(--space-xxxs);
-			padding-bottom: var(--space-xxxs);
-		}
-		&_space-v_xxs {
-			padding-top: var(--space-xxs);
-			padding-bottom: var(--space-xxs);
-		}
-		&_space-v_xs {
-			padding-top: var(--space-xs);
-			padding-bottom: var(--space-xs);
-		}
-		&_space-v_s {
-			padding-top: var(--space-s);
-			padding-bottom: var(--space-s);
-		}
-		&_space-v_m {
-			padding-top: var(--space-m);
-			padding-bottom: var(--space-m);
-		}
-		&_space-v_l {
-			padding-top: var(--space-l);
-			padding-bottom: var(--space-l);
-		}
-		&_space-v_xl {
-			padding-top: var(--space-xl);
-			padding-bottom: var(--space-xl);
-		}
-		&_space-v_xxl {
-			padding-top: var(--space-xxl);
-			padding-bottom: var(--space-xxl);
-		}
-		&_space-v_xxxl {
-			padding-top: var(--space-xxxl);
-			padding-bottom: var(--space-xxxl);
-		}
+    @include lg {
+        &__label_width_default {
+            width: 35%;
+        }
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+        &__label_width_default + &__control {
+            width: 65%;
+        }
+    }
+}
 
-	&__label_width_default {
-		width: 35%;
-	}
-	&__label_width_default + &__control {
-		width: 65%;
-	}
+.form__item { //разымеры отступов элементов формы
+    @each $name, $size in $sizes {
+        &_indent-b_#{$name} {
+            margin-bottom: $size;
+        }
+    }
 
+    @each $name, $size in $sizes {
+        &_space-h_#{$name} {
+            padding-left: $size;
+            padding-right: $size;
+        }
+    }
+
+    @each $name, $size in $sizes {
+        &_space-v_#{$name} {
+            padding-top: $size;
+            padding-bottom: $size;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .form_border_all {
-	border: $border-width var(--color-border) solid;
+    border: $border-width var(--color-border) solid;
 }
 
 .form_view_default {
-	background-color: var(--background-default);
+    background-color: var(--background-default);
 }

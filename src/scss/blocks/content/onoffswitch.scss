@@ -1,21 +1,22 @@
 .onoffswitch {
-	width: 97px;
-	height: 32px;
-	border: 2px var(--color-border) solid;
-	position: relative;
-	&__button {
-		width: 24px;
-		height: 24px;
-		position: absolute;
-		background-color: var(--color-border);
-		margin: 2px;
-	}
+    width: 97px;
+    height: 32px;
+    border: 2px var(--color-border) solid;
+    position: relative;
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-color: var(--color-border);
+        margin: 2px;
+    }
 }
 
 .onoffswitch_checked {
-	.onoffswitch {
-		&__button {
-			right: 0;
-		}
-	}
+    .onoffswitch {
+        &__button {
+            right: 0;
+        }
+    }
 }

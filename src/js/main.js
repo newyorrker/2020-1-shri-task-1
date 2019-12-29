@@ -1,9 +1,9 @@
-import '../scss/style.scss';
+import '../scss/style.scss'
 
-import BodyClickHandler from './BodyClickHandler';
+import BodyClickHandler from './BodyClickHandler'
 
-BodyClickHandler.on();
+BodyClickHandler.on()
 
-window.testOff = function testOff() {
-    BodyClickHandler.off();
+window.testOff = function testOff () {
+	BodyClickHandler.off()
 }
