@@ -19,12 +19,39 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Index - onoffswitch",
+      "url": "http://localhost:3000/index",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".onoffswitch"
+    },
+    {
+      "label": "Index - history",
+      "url": "http://localhost:3000/index",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".history__show"
+    },
+    {
       "label": "Product",
       "url": "http://localhost:3000/product",
       "readySelector": "",
       "delay": 200,
       "misMatchThreshold" : 0.07,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Product - onoffswitch",
+      "url": "http://localhost:3000/product",
+      "readySelector": "",
+      "delay": 200,
+      "misMatchThreshold" : 0.07,
+      "requireSameDimensions": true,
+      "clickSelector": ".onoffswitch"
     }
   ],
   "paths": {
