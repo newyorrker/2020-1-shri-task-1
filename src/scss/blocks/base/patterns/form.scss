@@ -124,12 +124,24 @@
 		}
 	}
 
-	&__label_width_default {
-		width: 35%;
+	&__item {
+		flex-wrap: wrap;
 	}
-	&__label_width_default + &__control {
-		width: 65%;
+
+	&__label_width_default, &__control {
+		width: 100%;
 	}
+
+	@include lg {
+		&__label_width_default {
+			width: 35%;
+		}
+		&__label_width_default + &__control {
+			width: 65%;
+		}
+	}
+
+	
 
 }
 

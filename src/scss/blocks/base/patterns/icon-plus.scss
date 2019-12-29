@@ -1,22 +1,20 @@
 .icon-plus {
-	&__icon {
-		&_indent-r_s {
-			margin-right: var(--space-s)
-		}
-		&_indent-r_m {
-			margin-right: var(--space-m)
-		}
+	@include lg {
+		&__icon {
+			&_indent-r_s {
+				margin-right: var(--space-s)
+			}
+			&_indent-r_m {
+				margin-right: var(--space-m)
+			}
 
-		&_indent-l_l {
-			margin-left: var(--space-l)
+			&_indent-l_l {
+				margin-left: var(--space-l)
+			}
 		}
-	}
-	&__block {
-		//
 	}
 }
 
 .icon-plus_vertical-align_center {
-	display: flex;
 	align-items: center;
 }

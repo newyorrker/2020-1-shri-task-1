@@ -1,8 +1,14 @@
 .informer {
-	&__content,
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__action {
 		display: flex;
-		flex-wrap: wrap;
+	}
+	&__content,
+	&__action {
 		&_space-a_xl {
 			padding: var(--space-xl);
 		}
@@ -17,8 +23,15 @@
 		&_distribute_center {
 			justify-content: center;
 		}
+	}
+	@include lg {
+		&__content {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}		
+	}
 
-	}	
+	
 }
 
 .informer_border_all {

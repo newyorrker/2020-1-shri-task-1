@@ -1,11 +1,15 @@
 .header {
-	max-width: $content-width-l;
 	background-color: var(--background-default);
 	padding-top: var(--space-xxxl);
 	padding-bottom: var(--space-xxxl);
+	margin-left: auto;
+	margin-right: auto;
 	&__content {
 		display: flex;
 		justify-content: space-between;
+		max-width: $content-width-l;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	&__logo {
 		width: 179px;
