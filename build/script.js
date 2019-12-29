@@ -228,13 +228,11 @@ var toggleTheme = function toggleTheme() {
       }
     }
   }
-
-  ;
 };
 
 var onOffSwitch = function onOffSwitch(element) {
-  //change button state 
-  toggleButton(element); //change page theme
+  // change button state
+  toggleButton(element); // change page theme
 
   toggleTheme();
 };
@@ -275,7 +273,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleListClasses", function() { return toggleListClasses; });
 var toggleListClasses = function toggleListClasses(classList, themes) {
   for (var theme in themes) {
-    if (themes.hasOwnProperty(theme)) {
+    if (Object.hasOwnProperty.call(themes, theme)) {
       classList.toggle(themes[theme]);
     }
   }
