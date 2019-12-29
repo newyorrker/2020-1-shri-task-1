@@ -12,3 +12,8 @@ html {
 @import './constants/constants';
 @import './blocks/base/base';
 @import './blocks/content/_index';
+
+//for develop
+body {
+    margin: 0;
+}
