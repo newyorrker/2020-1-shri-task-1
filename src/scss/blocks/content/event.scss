@@ -1,6 +1,10 @@
 .event {
     min-height: 400px;
 
+    &__content {
+        display: flex;
+    }
+
     &__preview {
         display: flex;
     }

@@ -1,13 +1,11 @@
 .card {
 
-    //to do: понять как правильно работать с выравниванием
     &__content_distribute_center {
         flex-direction: column;
         align-items: center;
     }
 
     &__content_vertical-align_center {
-        display: flex;
         align-items: center;
     }
 
@@ -44,7 +42,6 @@
     }
 
     &__footer_vertical-align_center {
-        display: flex;
         align-items: center;
     }
 
