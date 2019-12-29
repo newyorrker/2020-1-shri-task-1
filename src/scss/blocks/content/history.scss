@@ -1,31 +1,36 @@
 .history {
-	&__show, &__details {
-		display: flex;
-		flex-direction: column;
-	}
+    &__show,
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
 
-	&__pic {
-	    display: flex;
-	    justify-content: center;
-	}
-	&__time {
-		text-align: center;
-	}
-	@include lg {
-		&__show, &__details {
-			flex-direction: row;
-		}
-		&__show {
-			justify-content: space-between;
-		}
-		&__destination {
-			display: flex;
-			flex-wrap: nowrap;
-		}
-		&__details {
-			align-items: center;
-		}
-		
-	}
-	
+    &__pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__time {
+        text-align: center;
+    }
+
+    @include lg {
+        &__show,
+        &__details {
+            flex-direction: row;
+        }
+
+        &__show {
+            justify-content: space-between;
+        }
+
+        &__destination {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &__details {
+            align-items: center;
+        }
+    }
 }

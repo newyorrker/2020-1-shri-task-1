@@ -1,12 +1,13 @@
 .footer {
-	background-color: var(--background-default);
-	padding-top: var(--space-xxxl);
-	padding-bottom: var(--space-xxxl);
-	&__content {
-		display: flex;
-		justify-content: space-between;
-		max-width: $content-width-l;
-		margin-left: auto;
-		margin-right: auto;
-	}
+    background-color: var(--background-default);
+    padding-top: var(--space-xxxl);
+    padding-bottom: var(--space-xxxl);
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        max-width: $content-width-l;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -1,16 +1,18 @@
 .product {
-	min-height: 300px;
-	border-width: $border-width;
-	&__content + &__footer {
-		margin-top: 16px;
-	}
-	&__image .image {
-		height: 160px;
-		border-width: 0;
-		background-image: var(--url-placeholder-image);
-	}
+    min-height: 300px;
+    border-width: $border-width;
 
-	&__title {
-		margin-bottom: var(--space-xxxl);
-	}
+    &__content + &__footer {
+        margin-top: 16px;
+    }
+
+    &__image .image {
+        height: 160px;
+        border-width: 0;
+        background-image: var(--url-placeholder-image);
+    }
+
+    &__title {
+        margin-bottom: var(--space-xxxl);
+    }
 }

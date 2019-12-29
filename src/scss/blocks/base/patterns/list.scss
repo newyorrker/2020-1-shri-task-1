@@ -1,59 +1,64 @@
 .list {
-	&__item {
-		&_distribute_between {
-			justify-content: space-between;
-		}
+    &__item {
+        &_distribute_between {
+            justify-content: space-between;
+        }
 
-		&_vertical-align_center {
-			align-items: center;
-		}
+        &_vertical-align_center {
+            align-items: center;
+        }
 
-		&_border_bottom {
-			border-bottom: $border-width var(--color-border) solid;
-		}
-		&_border_top {
-			border-bottom: $border-width var(--color-border) solid;
-		}
+        &_border_bottom {
+            border-bottom: $border-width var(--color-border) solid;
+        }
 
-		&_indent-t_m {
-			margin-top: var(--space-m);
-		}
+        &_border_top {
+            border-bottom: $border-width var(--color-border) solid;
+        }
 
-		&_indent-b_s {
-			margin-bottom: var(--space-s);
-		}
-		&_indent-b_m {
-			margin-bottom: var(--space-m);
-		}
-		&_indent-b_l {
-			margin-bottom: var(--space-l);
-		}
-		&_indent-b_xl {
-			margin-bottom: var(--space-xl);
-		}
+        &_indent-t_m {
+            margin-top: var(--space-m);
+        }
 
-		&_space-a_m {
-			padding: var(--space-m);
-		}
+        &_indent-b_s {
+            margin-bottom: var(--space-s);
+        }
 
-		&_space-b_s {
-			padding-bottom: var(--space-s);
-		}
+        &_indent-b_m {
+            margin-bottom: var(--space-m);
+        }
 
-		&:first-child {
-			margin-top: 0;
-		}
-		&:last-child {
-			margin-bottom: 0;
-			border-bottom: 0;
-		}
-	}
+        &_indent-b_l {
+            margin-bottom: var(--space-l);
+        }
+
+        &_indent-b_xl {
+            margin-bottom: var(--space-xl);
+        }
+
+        &_space-a_m {
+            padding: var(--space-m);
+        }
+
+        &_space-b_s {
+            padding-bottom: var(--space-s);
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
 }
 
 .list_border_all {
-	border: $border-width var(--color-border) solid;
+    border: $border-width var(--color-border) solid;
 }
 
 .list_view_default {
-	background-color: var(--background-default);
+    background-color: var(--background-default);
 }

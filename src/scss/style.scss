@@ -1,34 +1,27 @@
-/* utils */
-
-
 //to do:
-
-// Заняться мобильной версткой
 
 // 4. Внедрить stylelint
 // 5. Внедрить esLint
-// 6. Тесты по скриншоту
-// 7. Автотесты Selenium
+// 6. Разделить на envs сборки
+// 7. Интерактивные тесты
+// 8. Закрыть все тудушки
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 @import './helpers/helpers';
 @import './constants/constants';
-
 @import './blocks/base/base';
 @import './blocks/content/_index';
 
-
 //for develop
 body {
-	margin: 0;
+    margin: 0;
 }
-
-// .black {
-// 	background-color: black;
-// }

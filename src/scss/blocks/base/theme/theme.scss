@@ -1,98 +1,93 @@
-/*THEME*/
+/* THEME */
 
-	//сюда забить переменные для цветов как минимум
+//сюда забить переменные для цветов как минимум
 
-	.theme_color_project-default {
-		--background-default: 	#ffffff;
-		--background-accent: 	#ffcc00;
-		--color-border: 		#000000;
+.theme_color_project-default {
+    --background-default: #fff;
+    --background-accent: #fc0;
+    --color-border: #000;
+    --text-primary: #000;
+    --text-secondary: rgba(0, 0, 0, 0.6);
+    --text-ghost: rgba(0, 0, 0, 0.3);
+    --text-link: #07f;
+}
 
-		--text-primary: 		#000000;
-		--text-secondary:		rgba(0, 0, 0, 0.6);
-		--text-ghost:  			rgba(0, 0, 0, 0.3);
-		--text-link: 			#0077ff;
-	}
+.theme_color_project-brand {
+    --background-default: #07f;
+    --background-accent: #fff;
+    --color-border: #fff;
+    --text-primary: #fff;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-ghost: rgba(255, 255, 255, 0.3);
+    --text-link: #fff;
+}
 
-	.theme_color_project-brand {
-		--background-default: 	#0077ff;
-		--background-accent: 	#ffffff;
-		--color-border: 		#ffffff;
+.theme_color_project-inverse {
+    --background-default: #000;
+    --background-accent: #fff;
+    --color-border: #fff;
+    --text-primary: #fff;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-ghost: rgba(255, 255, 255, 0.3);
+    --text-link: #07f;
+}
 
-		--text-primary: 		#ffffff;
-		--text-secondary:		rgba(255, 255, 255, 0.6);
-		--text-ghost:  			rgba(255, 255, 255, 0.3);
-		--text-link: 			#ffffff;
-	}
+.theme_color_project-warning {
+    --background-default: #f33;
+    --background-accent: #fff;
+    --color-border: #f33;
+    --text-primary: #fff;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-ghost: rgba(255, 255, 255, 0.3);
+    --text-link: #fff;
+}
 
-	.theme_color_project-inverse {
-		--background-default: 	#000000;
-		--background-accent: 	#ffffff;
-		--color-border: 		#ffffff;
+/* size */
 
-		--text-primary: 		#ffffff;
-		--text-secondary:		rgba(255, 255, 255, 0.6);
-		--text-ghost:  			rgba(255, 255, 255, 0.3);
-		--text-link: 			#0077ff;
-	}
+.theme_size_default {
+    --text-s: 8px;
+    --text-m: 10px;
+    --text-l: 11px;
+    --text-xl: 13px;
+    --text-xxl: 16px;
+    --line-height-s: 21px;
+    --line-height-m: 25px;
+    --line-height-l: 28px;
+    --line-height-xl: 34px;
+    --line-height-xxl: 38px;
+}
 
-	.theme_color_project-warning {
-		--background-default: 	#ff3333;
-		--background-accent: 	#ffffff;
-		--color-border: 		#ff3333;
+/* size */
 
-		--text-primary: 		#ffffff;
-		--text-secondary:		rgba(255, 255, 255, 0.6);
-		--text-ghost:  			rgba(255, 255, 255, 0.3);
-		--text-link: 			#ffffff;
-	}
+.theme_space_default {
+    --space-xxxs: 3px;
+    --space-xxs: 6px;
+    --space-xs: 9px;
+    --space-s: 15px;
+    --space-m: 18px;
+    --space-l: 24px;
+    --space-xl: 27px;
+    --space-xxl: 36px;
+    --space-xxxl: 45px;
+    --space-xxxxl: 51px;
+    --space-xxxxxl: 72px.;
+}
 
-	/* size */
+.theme_gap_small {
+    --gap: var(--space-s);
 
-	.theme_size_default {
-		--text-s: 8px;
-		--text-m: 10px;
-		--text-l: 11px;
-		--text-xl: 13px;
-		--text-xxl: 16px;
+    @include lg {
+        --gap: var(--space-xl);
+    }
+}
 
-		--line-height-s: 21px;
-		--line-height-m: 25px;
-		--line-height-l: 28px;
-		--line-height-xl: 34px;
-		--line-height-xxl: 38px;
-	}
+//to do использовать yoksel
 
-	/* size */
+.theme_color_project-default {
+    --url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
 
-	.theme_space_default {
-		--space-xxxs: 3px;
-		--space-xxs: 6px;
-		--space-xs: 9px;
-		--space-s: 15px;
-		--space-m: 18px;
-		--space-l: 24px;
-		--space-xl: 27px;
-		--space-xxl: 36px;
-		--space-xxxl: 45px;
-		--space-xxxxl: 51px;
-		--space-xxxxxl: 72px.
-	}
-
-	.theme_gap_small {
-		--gap: var(--space-s);
-
-		@include lg {
-			--gap: var(--space-xl);
-		}
-	}
-
-	//to do использовать yoksel
-
-	.theme_color_project-default {
-		--url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E");
-	}
-
-	.theme_color_project-inverse,
-	.theme_color_project-brand {
-		--url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");;
-	}
+.theme_color_project-inverse,
+.theme_color_project-brand {
+    --url-placeholder-image: url("data:image/svg+xml,%3Csvg width='80' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 16h16V8h8v8h8v8h8v8h8v16h-8v-8h-8v8h-8v8h-8v-8H32v8h-8v-8h-8v-8H8v8H0V32h8v-8h8v-8h8V8h8v8zm-8 16h8v-8h-8v8zM16 0h8v8h-8V0zm0 56h8v8h-8v-8zm40-24v-8h-8v8h8zm8-32v8h-8V0h8zm0 56v8h-8v-8h8z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");;
+}
