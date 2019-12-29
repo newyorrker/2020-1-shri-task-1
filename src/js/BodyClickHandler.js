@@ -26,7 +26,7 @@ export default {
         if(document.body) {
             document.body.addEventListener('click', checkClick)
         } else {
-            console.error('document is ' + document);
+            console.error('document.body is ' + document.body);
         }
 
     },
@@ -35,7 +35,7 @@ export default {
         if(document.body) {
             document.body.removeEventListener('click', checkClick)
         } else {
-            console.error('document is ' + document);
+            console.error('document.body is ' + document.body);
         }
 
     }
